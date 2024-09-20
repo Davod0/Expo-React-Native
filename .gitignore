@@ -33,3 +33,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+#In this file you can specify which files should be ignored by git and my api key is there
+env.tsx
