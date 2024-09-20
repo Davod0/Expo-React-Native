@@ -3,8 +3,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // Om 
 import FavoritesScreen from '../screens/favoritesScreen';
 import HomeScreen from '../screens/HomeScreen';
 
-
 const Tab = createBottomTabNavigator();
+
+export type TabParamList = {
+    Home: undefined;
+    Favorites: undefined;
+}
 
 export default function TabNavigator() {
     return (

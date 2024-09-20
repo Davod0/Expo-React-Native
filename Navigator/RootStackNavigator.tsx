@@ -1,10 +1,12 @@
+import { NavigatorScreenParams } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SettingScreen from '../screens/SettingScreen';
-import TabNavigator from './TabNavigator';
+import TabNavigator, { TabParamList } from './TabNavigator';
 
 
 export type RootStackParamList = {
-  HomeNavigator: undefined;
+    // Se till att TS känner till alla 
+  HomeNavigator: NavigatorScreenParams<TabParamList>;
   Setting: undefined;
 };
 
