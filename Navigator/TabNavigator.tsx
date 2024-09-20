@@ -1,6 +1,6 @@
 import { MaterialIcons } from '@expo/vector-icons'; // Se till att du importerar rätt paket
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // Om du använder Tab.Navigator
-import FavoritesScreen from '../screens/favoritesScreen';
+import FavoritesScreen from '../screens/FavoritesScreen';
 import HomeScreen from '../screens/HomeScreen';
 
 const Tab = createBottomTabNavigator();

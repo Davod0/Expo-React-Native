@@ -5,7 +5,6 @@ import TabNavigator, { TabParamList } from './TabNavigator';
 
 
 export type RootStackParamList = {
-    // Se till att TS känner till alla 
   HomeNavigator: NavigatorScreenParams<TabParamList>;
   Setting: undefined;
 };
