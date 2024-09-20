@@ -3,12 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 import { RootStackParamList } from "../Navigator/RootStackNavigator";
 
 
-type Props = NativeStackScreenProps<RootStackParamList, "Home">;
-
-export default function HomeScreen(props: Props) {
+export default function FavoritesScreen() {
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text>favorites Screen</Text>
     </View>
   );
 }
@@ -16,7 +14,6 @@ export default function HomeScreen(props: Props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
