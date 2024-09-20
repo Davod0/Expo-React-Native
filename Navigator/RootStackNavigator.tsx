@@ -21,7 +21,12 @@ export default function RootStackNavigator() {
             }}
         />
 
-        <RootStack.Screen name="Setting" component={SettingScreen} />
+        <RootStack.Screen name="Setting" component={SettingScreen}
+         options=
+            {{
+                headerBackTitle: 'Back',
+            }}
+        />
       </RootStack.Navigator>
   );
 }

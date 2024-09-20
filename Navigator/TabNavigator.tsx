@@ -12,15 +12,24 @@ export default function TabNavigator() {
          screenOptions={({ navigation }) => ({
                 headerRight: (props) => (
                     <MaterialIcons
+                       style={{ marginRight: 16 }}
                         name="settings-suggest"
                         size={24}
-                        color={props.tintColor}
+                        color={props.pressColor}
                         onPress={() => navigation.navigate("Setting")}
                     />
                 ),
          })}>
-            <Tab.Screen name="Home" component={HomeScreen} />
-            <Tab.Screen name="Favorites" component={FavoritesScreen} />
+            <Tab.Screen name="Home" component={HomeScreen} 
+                options={{
+                    tabBarIcon: (props) => <MaterialIcons name="home" size={24} color={props.color} />,
+                }}
+            />
+            <Tab.Screen name="Favorites" component={FavoritesScreen}
+               options={{
+                   tabBarIcon: (props) => <MaterialIcons name="favorite" size={24} color={props.color} />,
+               }}
+             />
         </Tab.Navigator>
     );
 }
