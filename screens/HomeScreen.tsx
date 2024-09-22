@@ -4,11 +4,10 @@ import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Photo } from "../data";
 import { API_KEY } from '../env';
 
-// Change name of this project
-
 export default function HomeScreen() {
 
   const [photos, setPhotos] = useState<Photo[]>([]);
+  console.log(photos);
 
   useEffect(() => {
     async function fethcer(){
